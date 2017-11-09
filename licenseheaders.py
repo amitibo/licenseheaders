@@ -40,7 +40,7 @@ import io
 import subprocess
 
 
-__version__ = '0.1'  
+__version__ = '0.1'
 __author__ = 'Johann Petrak'
 __license__ = 'MIT'
 
@@ -246,7 +246,7 @@ def read_file(file):
     if not type:
         return None
     settings = typeSettings.get(type)
-    with open(file,'r') as f:
+    with open(file,'rb') as f:
         lines = f.readlines()
     ## now iterate throw the lines and try to determine the various indies
     ## first try to find the start of the header: skip over shebang or empty lines
